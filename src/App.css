@@ -9,7 +9,6 @@
   --border: #e0e0e0;
 }
 
-/* Dark Mode Variables */
 body.dark {
   --bg-body: #121212;
   --bg-cv: #1e1e1e;
@@ -33,7 +32,7 @@ body {
   transition: background 0.3s ease;
 }
 
-/* --- HEADER --- */
+/* HEADER*/
 .header {
   background: var(--bg-cv);
   padding: 15px 30px;
@@ -90,7 +89,7 @@ button:hover {
   color: var(--bg-cv);
 }
 
-/* --- CV PAPER LAYOUT --- */
+/*CV PAPER LAYOUT*/
 main {
   width: 210mm;
   min-height: 297mm;
@@ -102,7 +101,7 @@ main {
   transition: background 0.3s ease;
 }
 
-/* --- PROFILE SECTION --- */
+/*PROFILE SECTION*/
 .profile {
   display: flex;
   align-items: center;
@@ -156,7 +155,7 @@ main {
   font-weight: 600;
 }
 
-/* --- CV CONTENT COLUMNS --- */
+
 .cv-content {
   display: grid;
   grid-template-columns: 32% 68%;
@@ -174,7 +173,7 @@ main {
   background: var(--bg-cv);
 }
 
-/* --- SECTIONS --- */
+/*SECTIONS */
 .section {
   margin-bottom: 30px;
 }
@@ -194,7 +193,7 @@ main {
   color: var(--text-muted);
 }
 
-/* --- EDUCATION & SKILLS --- */
+/*EDUCATION & SKILLS*/
 .education-item {
   margin-bottom: 15px;
 }
@@ -204,9 +203,8 @@ main {
   color: var(--text-main);
 }
 
-/* --- UPDATED SKILLS TO BULLET LIST --- */
 .skills-list {
-  list-style-type: none; /* Removes default browser bullets */
+  list-style-type: none; 
   padding-left: 0;
 }
 
@@ -215,19 +213,19 @@ main {
   color: var(--text-muted);
   padding-left: 15px;
   position: relative;
-  margin-bottom: 8px; /* Adds space between each skill */
+  margin-bottom: 8px; 
 }
 
 .skill::before {
-  content: "•"; /* Creates the custom bullet point */
+  content: "•"; 
   position: absolute;
   left: 0;
-  color: var(--gold); /* Makes the bullet gold to match your theme */
+  color: var(--gold); 
   font-size: 16px;
   line-height: 1;
 }
 
-/* --- EXPERIENCE & PROJECTS --- */
+/*EXPERIENCE & PROJECTS*/
 .experience-item, .project-item, .reference-item {
   margin-bottom: 20px;
 }
@@ -256,7 +254,7 @@ main {
   gap: 15px;
 }
 
-/* --- FOOTER --- */
+/*FOOTER*/
 .footer {
   margin-top: auto;
   background: var(--bg-sidebar);
@@ -267,7 +265,6 @@ main {
   color: var(--text-muted);
 }
 
-/* --- RESPONSIVE DESIGN (Tablets & Mobiles) --- */
 @media (max-width: 1100px) {
   main {
     width: 95%;
@@ -298,7 +295,7 @@ main {
   }
 
   .cv-content {
-    grid-template-columns: 1fr; /* Stack columns on mobile */
+    grid-template-columns: 1fr; 
   }
   
   .cv-left {
@@ -311,7 +308,6 @@ main {
   }
 }
 
-/* --- PRINT SETTINGS --- */
 @media print {
   @page { size: A4; margin: 0; }
   body { background: white; }
