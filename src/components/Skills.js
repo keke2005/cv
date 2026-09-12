@@ -1,7 +1,6 @@
 import React from 'react';
 
 function Skills({ showSkills, toggleSkills }) {
-  // Updated with your exact skills from the screenshot
   const skillsList = [
     "Java",
     "JavaFX",
