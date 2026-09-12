@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer className="footer">
 
-    
+
       <p>
         © 2026 Kekeletso Tsilane. All Rights Reserved.
       </p>
